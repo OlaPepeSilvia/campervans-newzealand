@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore all vans — Campervans Australia</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html" style="text-decoration:none">Campervans Australia</a>
+  <div class="navlinks">
+    <a href="index.html">Home</a><a href="explore-vans.html">Explore all vans</a><a href="field-notes.html">Field guides</a><a href="destinations.html">Destinations</a>
+  </div>
+  <a href="#" class="book">Book</a>
+</nav>
+
+<div class="pagehead">
+  <h1>Explore all vans</h1>
+  <p>Every van in the fleet, from nippy two-berths to full family motorhomes. Filter by size, budget, or trip, and find the one that fits your road.</p>
+</div>
+
+<div class="shell">
+
+  <aside class="sidebar">
+    <div class="fgroup">
+      <h4>Vehicle type</h4>
+      <select class="fselect">
+        <option>All types</option>
+        <option>2 berth campervan</option>
+        <option>4 berth campervan</option>
+        <option>Family motorhome</option>
+        <option>4WD camper</option>
+      </select>
+    </div>
+    <div class="fgroup">
+      <h4>Features</h4>
+      <div class="checks">
+        <label class="checkrow"><input type="checkbox" checked> Self-contained</label>
+        <label class="checkrow"><input type="checkbox"> Toilet &amp; shower</label>
+        <label class="checkrow"><input type="checkbox" checked> Automatic</label>
+        <label class="checkrow"><input type="checkbox" checked> Fridge</label>
+        <label class="checkrow"><input type="checkbox"> Gas stove</label>
+        <label class="checkrow"><input type="checkbox"> Solar panel</label>
+      </div>
+    </div>
+    <div class="fgroup">
+      <h4>Availability</h4>
+      <div class="avail">
+        <button class="availbtn on" id="av-book">Book now</button>
+        <button class="availbtn" id="av-req">On request</button>
+      </div>
+    </div>
+    <div class="fgroup">
+      <h4>Price</h4>
+      <input type="range" min="59" max="300" value="300" id="pricerange">
+      <div class="pricevals"><span>$59</span><span id="pricemax">$300</span></div>
+    </div>
+  </aside>
+
+  <div class="grid">
+
+  <a class="vcard" href="van.html">
+    <div class="vimg g1"><button class="heart" aria-label="Save">&#9825;</button>
+      <div class="vname">Travellers<br>Autobarn<small>Kuga</small></div></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag">2 berth</span><span class="tag">Budget</span></div>
+      <div class="vtitle">The Kuga: two-berth with the fold-out double</div>
+      <div class="vfoot">
+        <div class="vloc"><span class="berth">Sleeps 2 &middot; manual</span>Nationwide pickup</div>
+        <div class="vprice"><div class="from">From / day</div><div class="amt">$79</div></div>
+      </div>
+    </div>
+  </a>
+
+  <a class="vcard" href="van.html">
+    <div class="vimg g2"><button class="heart" aria-label="Save">&#9825;</button>
+      <div class="vname">Spaceships<br><small>Alpha</small></div></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag">2 berth</span><span class="tag">One way</span></div>
+      <div class="vtitle">The Alpha: compact camper that drives like a car</div>
+      <div class="vfoot">
+        <div class="vloc"><span class="berth">Sleeps 2 &middot; auto</span>East coast hubs</div>
+        <div class="vprice"><div class="from">From / day</div><div class="amt">$119</div></div>
+      </div>
+    </div>
+  </a>
+
+  <a class="vcard" href="van.html">
+    <div class="vimg g3"><button class="heart" aria-label="Save">&#9825;</button>
+      <div class="vname">Star RV<br>Polaris<small>2 berth</small></div></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag">2 berth</span><span class="tag">Premium</span></div>
+      <div class="vtitle">The Polaris 2: shower, toilet, and full kitchen</div>
+      <div class="vfoot">
+        <div class="vloc"><span class="berth">Sleeps 2 &middot; auto</span>Nationwide pickup</div>
+        <div class="vprice"><div class="from">From / day</div><div class="amt">$65</div></div>
+      </div>
+    </div>
+  </a>
+
+  <a class="vcard" href="van.html">
+    <div class="vimg g4"><button class="heart" aria-label="Save">&#9825;</button>
+      <div class="vname">Apollo<br>HiTop<small>4 berth</small></div></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag">4 berth</span><span class="tag">Family</span></div>
+      <div class="vtitle">The HiTop: stand-up room and seats for five</div>
+      <div class="vfoot">
+        <div class="vloc"><span class="berth">Sleeps 4 &middot; auto</span>Nationwide pickup</div>
+        <div class="vprice"><div class="from">From / day</div><div class="amt">$139</div></div>
+      </div>
+    </div>
+  </a>
+
+  <a class="vcard" href="van.html">
+    <div class="vimg g5"><button class="heart" aria-label="Save">&#9825;</button>
+      <div class="vname">Coastal<br>Cruiser<small>4WD</small></div></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag">4WD</span><span class="tag">Off grid</span></div>
+      <div class="vtitle">The Cruiser: go-anywhere 4WD with rooftop tent</div>
+      <div class="vfoot">
+        <div class="vloc"><span class="berth">Sleeps 3 &middot; manual</span>Cairns &amp; Darwin</div>
+        <div class="vprice"><div class="from">From / day</div><div class="amt">$159</div></div>
+      </div>
+    </div>
+  </a>
+
+  <a class="vcard" href="van.html">
+    <div class="vimg g6"><button class="heart" aria-label="Save">&#9825;</button>
+      <div class="vname">Family<br>Tourer<small>6 berth</small></div></div>
+    <div class="vbody">
+      <div class="tags"><span class="tag">6 berth</span><span class="tag">Family</span></div>
+      <div class="vtitle">The Tourer: the big one for a full family loop</div>
+      <div class="vfoot">
+        <div class="vloc"><span class="berth">Sleeps 6 &middot; auto</span>Nationwide pickup</div>
+        <div class="vprice"><div class="from">From / day</div><div class="amt">$189</div></div>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+
+
+
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll('.heart').forEach(h=>{
+    h.onclick=e=>{e.preventDefault();e.stopPropagation();h.style.color=h.style.color==='rgb(222, 106, 50)'?'':'#DE6A32'};
+  });
+  const book=document.getElementById('av-book'),req=document.getElementById('av-req');
+  if(book&&req){book.onclick=()=>{book.classList.add('on');req.classList.remove('on')};
+  req.onclick=()=>{req.classList.add('on');book.classList.remove('on')};}
+  const range=document.getElementById('pricerange'),pmax=document.getElementById('pricemax');
+  if(range&&pmax)range.oninput=()=>{pmax.textContent='$'+range.value};
+})();
+</script>
+</body>
+</html>

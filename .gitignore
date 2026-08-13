@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Replit
+.replit
+replit.nix
+.config/
+.upm/
+
+# Node (if added later)
+node_modules/

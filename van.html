@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apollo HiTop — Campervans Australia</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html" style="text-decoration:none">Campervans Australia</a>
+  <div class="navlinks">
+    <a href="index.html">Home</a><a href="explore-vans.html">Explore all vans</a><a href="field-notes.html">Field guides</a><a href="destinations.html">Destinations</a>
+  </div>
+  <a href="#" class="book">Book</a>
+</nav>
+
+<div class="back"><a href="explore-vans.html">&#8592; Back to all vans</a></div>
+
+<div class="wrap">
+
+  <div class="gallery">
+    <div class="mainimg">
+      <button class="gbtn l" aria-label="Previous">&#8249;</button>
+      <div class="van-illo">Apollo HiTop</div>
+      <button class="gbtn r" aria-label="Next">&#8250;</button>
+      <div class="dots"><i class="on"></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="floor">
+      <h4>FLOOR PLAN</h4>
+      <div class="plan">
+        <div class="room bed">Bed</div>
+        <div class="room kit">Kitchen</div>
+        <div class="room sto">Storage</div>
+        <div class="room sea">Seats</div>
+        <div class="room cab">Cab</div>
+      </div>
+    </div>
+  </div>
+
+  <h1 class="title">Apollo HiTop</h1>
+  <div class="specs">
+    <div class="spec">&#9201; <b>Automatic</b></div>
+    <div class="spec">&#128100; <b>Seats 2</b></div>
+    <div class="spec">&#128716; <b>Sleeps 2</b></div>
+    <div class="spec">&#10052; <b>Fridge</b></div>
+    <div class="spec">&#128293; <b>Gas cooker</b></div>
+    <div class="spec">&#128268; <b>USB charger</b></div>
+  </div>
+
+  <p class="desc">A compact, easy-to-drive hi-top camper built for two. Pop the roof at camp for standing room, with a practical kitchen, fridge, and comfortable sleeping setup. Ideal for east-coast runs and one-way adventures.</p>
+
+  <div class="summaries">
+    <div>
+      <div class="sumhead">TRIP SUMMARY</div>
+      <div class="sumrow"><span class="lbl">Pick up</span><span class="val">Brisbane</span></div>
+      <div class="sumrow"><span class="lbl">Drop off</span><span class="val">Same as pick up</span></div>
+      <div class="sumrow"><span class="lbl">Dates</span><span class="val">11 - 25 Nov 2026</span></div>
+      <div class="sumrow"><span class="lbl">Duration</span><span class="val">14 days</span></div>
+      <div class="sumrow"><span class="lbl">Travellers</span><span class="val">2 adults</span></div>
+    </div>
+    <div>
+      <div class="sumhead">PRICING SUMMARY</div>
+      <div class="sumrow"><span class="lbl">Daily rate</span><span class="val">$65.36 / day</span></div>
+      <div class="sumrow"><span class="lbl">Base rental (14d)</span><span class="val">$915.00</span></div>
+      <div class="sumrow"><span class="lbl">Insurance</span><span class="val">Included</span></div>
+      <div class="sumrow"><span class="lbl">Add-ons</span><span class="val">$0.00</span></div>
+      <div class="sumrow"><span class="lbl">Estimated total</span><span class="val">$915.00</span></div>
+    </div>
+  </div>
+
+  <!-- BOOKING CTA FORM -->
+  <div class="bookcta">
+    <h2>Want to book this van?</h2>
+    <p class="sub">Enter your details, add your dates and pick-up, then send it through. One of our team will confirm availability and get back to you.</p>
+
+    <div class="frow">
+      <div class="field"><label>First name</label><input type="text" placeholder="Jane"></div>
+      <div class="field"><label>Last name</label><input type="text" placeholder="Doe"></div>
+    </div>
+    <div class="frow">
+      <div class="field"><label>Email</label><input type="email" placeholder="jane@email.com"></div>
+      <div class="field"><label>Phone</label><input type="tel" placeholder="+61 400 000 000"></div>
+    </div>
+    <div class="frow">
+      <div class="field"><label>Pick-up date</label><input type="date"></div>
+      <div class="field"><label>Drop-off date</label><input type="date"></div>
+    </div>
+    <div class="frow">
+      <div class="field"><label>Pick-up location</label>
+        <select><option>Brisbane</option><option>Sydney</option><option>Melbourne</option><option>Cairns</option><option>Byron Bay</option></select>
+      </div>
+      <div class="field"><label>Travellers</label>
+        <select><option>1 adult</option><option selected>2 adults</option><option>2 adults + kids</option><option>4 adults</option></select>
+      </div>
+    </div>
+
+    <button class="requestbtn" id="reqbtn">Request this van</button>
+    <p class="reqnote">This sends an enquiry to our team. No payment is taken now.</p>
+    <div class="confirm" id="confirm">Thanks! Your request has been sent. Our team will be in touch shortly to confirm availability.</div>
+  </div>
+
+</div>
+
+
+
+
+
+<script>
+(function(){
+  const b=document.getElementById('reqbtn');
+  if(b)b.onclick=()=>{document.getElementById('confirm').style.display='block';b.textContent='Request sent';};
+})();
+</script>
+</body>
+</html>
